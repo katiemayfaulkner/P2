@@ -23,6 +23,9 @@ header{
     margin-left:40px ;
     margin-right:40px ;
 }
+.signup {
+    color: #0065FC;
+}
 footer {
     background-color: #f2f2f2 ;
     margin-left: -20px;
@@ -48,4 +51,184 @@ footer > div:nth-child(2) {
 footer > div:nth-child(3) {
     grid-column: 3;
 }
-  
+.slogans{
+    padding-left: 40px ;
+}
+.inputnav {
+    margin-left: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.fa-map-marker-alt {
+    background-color: #f2f2f2 ;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    float: left;
+    width: 17px;
+    height: 14px;
+}
+.searchinput {
+    font-size: 20px ;
+    font-weight: bold;
+    padding: 15px;
+    float: center;
+    margin-left: -0.7px;
+    border:1px; 
+    border-style:solid; 
+    border-color:#f2f2f2; 
+    width: 220px;
+    height: 22px;
+}
+.searchbutton {
+    font-size: 20px ;
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    padding: 15px;
+    float: right;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: -0.5px;
+    border: none;
+}
+.filternav {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.filters{
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 20px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.fa-money-bill-wave {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border: 12px; 
+    border-radius: 35px;
+}
+.lowcost {
+    font-size: 20px ;
+    color:black;
+    font-weight: bold;
+    background-color: transparent;
+    border:none;
+}  
+.lowcostfilter{
+    padding-right: 10px;
+    background-color:white;
+    border-radius: 25px;
+    border-style:solid;
+    border-color: #F2F2F2;
+    margin-right: 20px;
+}
+.lowcostfilter:hover {
+    background-color: #DEEBFF;
+    color: white;
+  }
+.fa-child {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border: 12px; 
+    border-radius: 50px;
+}
+.famfriendly {
+    font-size: 20px ;
+    color:black;
+    font-weight: bold; 
+    background-color: transparent;
+    border:none;  
+}
+.famfriendlyfilter {
+    padding-right: 10px;
+    background-color:white;
+    border-radius: 25px;
+    border-style:solid;
+    border-color: #F2F2F2;
+    margin-right: 20px;
+}
+.famfriendlyfilter:hover {
+    background-color: #DEEBFF;
+    color: white;
+  }
+.fa-heart {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border: 12px; 
+    border-radius: 35px;
+}
+.romantic {
+    font-size: 20px ;
+    color:black;
+    font-weight: bold;
+    background-color: transparent;
+    border:none;
+}
+.romanticfilter {
+    padding-right: 10px;
+    background-color:white;
+    border-radius: 25px;
+    border-style:solid;
+    border-color: #F2F2F2;
+    margin-right: 20px;
+}
+.romanticfilter:hover {
+    background-color: #DEEBFF;
+    color: white;
+  }
+.fa-dog {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border: 12px; 
+    border-radius: 35px;
+}
+.petsok {
+    font-size: 20px ;
+    color:black;
+    font-weight: bold;
+    background-color: transparent;
+    border:none;
+}
+.petsokfilter {
+    padding-right: 10px;
+    background-color:white;
+    border-radius: 25px;
+    border-style:solid;
+    border-color: #F2F2F2;
+    margin-right: 20px;
+}
+.petsokfilter:hover {
+    background-color: #DEEBFF;
+    color: white;
+  }
+.info{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 450px;
+}
+.fa-info {
+    margin-left: 20px;
+    color:#0065FC;
+    background-color:white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-color:white;
+    border-radius: 50px;
+    border: 2px;
+    border-style:solid;
+    border-color: #F2F2F2;
+}
