@@ -1,50 +1,54 @@
-html { 
-    font-family: "arial";
-    padding-bottom: 600px;
-} 
-main{
-    padding-bottom: 232px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
 }
 
   /* Logo & Menu */
 .logo-menu {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+  margin:40px ;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  
 }
-.logo-menu > div:nth-child(4) {
-    grid-column: 9;
+.headermenu {
+  padding-right: 40px;
+  display: inline-flex;
 }
-.logo-menu > div:nth-child(3) {
-    grid-column: 8;
+
+ /* Menu Items */
+.accommodations {
+  padding-right: 50px;
+  color: black;
+  text-decoration: none;
 }
-.logo-menu > div:nth-child(2) {
-    grid-column: 7;
+.accommodations:hover{
+  color: #0065FC;
 }
-header > svg:nth-child(1) {
-    grid-column: 1;
-}
-.logo-menu{
-    margin-top:40px ;
-    margin-bottom:40px ;
-    margin-left:40px ;
-    margin-right:40px ;
-}
+ .activities {
+  padding-right: 50px;
+  color: black;
+  text-decoration: none;
+ }
+ .activities:hover{
+  color: #0065FC;
+ }
 .signup {
     color: #0065FC;
+    text-decoration: none;
 }
 
 /* Footer */
 .main-footer{
     background-color: #f2f2f2 ;
     padding: 40px;
-    position:fixed;
-    bottom:0;
-    width: 100%
-  }
-  .main-footer{
+    width: 100%;
+    margin-top: 40px;
+    line-height: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
+  }
 .main-footer > div:nth-child(1) {
     grid-column: 1;
     margin-left: 40px;
@@ -59,6 +63,7 @@ header > svg:nth-child(1) {
 /* Slogans */
 .slogans{
     padding-left: 40px ;
+    line-height: 35px;
 }
 
 /* Input Navigation */
@@ -91,6 +96,7 @@ header > svg:nth-child(1) {
 }
 .searchbutton {
     font-size: 20px ;
+    text-decoration: none;
     color: white;
     font-weight: bold;
     background-color: #0065FC;
@@ -106,18 +112,37 @@ header > svg:nth-child(1) {
 .filternav {
     margin-left: 20px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start; 
 }
-.filters{
+.filternav p{
     font-size: 20px;
     padding-right: 25px;
     padding-left: 20px; 
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.filter{
+  padding-right: 10px;
+  background-color:white;
+  border-radius: 25px;
+  border-style:solid;
+  border-color: #F2F2F2;
+  margin-right: 20px;
+}
+.filter:hover {
+  background-color: #DEEBFF;
+  color: white;
+}
+.filtertxt {
+  font-size: 20px ;
+  color:black;
+  font-weight: bold;
+  background-color: transparent;
+  border:none;
+}  
 .fa-money-bill-wave {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -125,25 +150,6 @@ header > svg:nth-child(1) {
     border: 12px; 
     border-radius: 35px;
 }
-.lowcost {
-    font-size: 20px ;
-    color:black;
-    font-weight: bold;
-    background-color: transparent;
-    border:none;
-}  
-.lowcostfilter{
-    padding-right: 10px;
-    background-color:white;
-    border-radius: 25px;
-    border-style:solid;
-    border-color: #F2F2F2;
-    margin-right: 20px;
-}
-.lowcostfilter:hover {
-    background-color: #DEEBFF;
-    color: white;
-  }
 .fa-child {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -151,25 +157,6 @@ header > svg:nth-child(1) {
     border: 12px; 
     border-radius: 50px;
 }
-.famfriendly {
-    font-size: 20px ;
-    color:black;
-    font-weight: bold; 
-    background-color: transparent;
-    border:none;  
- }
- .famfriendlyfilter {
-    padding-right: 10px;
-    background-color:white;
-    border-radius: 25px;
-    border-style:solid;
-    border-color: #F2F2F2;
-    margin-right: 20px;
- }
- .famfriendlyfilter:hover {
-    background-color: #DEEBFF;
-    color: white;
-  }
  .fa-heart {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -177,25 +164,6 @@ header > svg:nth-child(1) {
     border: 12px; 
     border-radius: 35px;
  }
- .romantic {
-    font-size: 20px ;
-    color:black;
-    font-weight: bold;
-    background-color: transparent;
-    border:none;
- }
- .romanticfilter {
-    padding-right: 10px;
-    background-color:white;
-    border-radius: 25px;
-    border-style:solid;
-    border-color: #F2F2F2;
-    margin-right: 20px;
- }
- .romanticfilter:hover {
-    background-color: #DEEBFF;
-    color: white;
-  }
  .fa-dog {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -203,44 +171,20 @@ header > svg:nth-child(1) {
     border: 12px; 
     border-radius: 35px;
  }
- .petsok {
-    font-size: 20px ;
-    color:black;
-    font-weight: bold;
-    background-color: transparent;
-    border:none;
- }
- .petsokfilter {
-    padding-right: 10px;
-    background-color:white;
-    border-radius: 25px;
-    border-style:solid;
-    border-color: #F2F2F2;
-    margin-right: 20px;
- }
- .petsokfilter:hover {
-    background-color: #DEEBFF;
-    color: white;
-  }
+
  .info-footer {
-    margin-left: 20px;
+    margin-left: 40px;
+    width: 420px;
     display: flex;
-    align-items: center;
-    width: 450px;
+    align-items: flex-start;
+    line-height: 25px;
  }
  .fa-info {
-    margin-left: 20px;
-    color:#0065FC;
-    background-color:white;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 10px;
-    background-color:white;
-    border-radius: 50px;
-    border: 2px;
-    border-style:solid;
-    border-color: #F2F2F2;
+  color:#0065FC;
+  padding: 5px 10px 5px 10px ;
+  margin-right: 10px;
+  border-radius: 50px;
+  border:solid 2px #F2F2F2 ;
  }
 
 /* Activities in Marseille */
@@ -248,33 +192,23 @@ header > svg:nth-child(1) {
     padding-left: 40px;
     padding-right: 40px;
  }
-
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
   
   .activityrow {
     display: flex;
-    width: 1110px;
+    width: 100%;
     margin: 50px auto 0;
   }
-  
   
   /* One-Row Items */
   .activityrow .col {
     width: calc(94% / 4);
-    height: 450px;
     margin-right: 1%;
     margin-left: 1%;
-    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 24px;
+  }
+  .activityrow .bigcard {
+    text-decoration: none;
   }
   
   .activityrow .col:first-child {
@@ -282,12 +216,14 @@ header > svg:nth-child(1) {
     
   }
   .activityrow .col:last-child {
-    margin-right: 0;
-    
+    margin-right: 0;  
   }
   
-  
   /* Two Rows Items */
+  .activityrow .has-two-rows {
+    box-shadow: none;
+    text-decoration: none;
+  }
   .activityrow .has-two-rows .smallcard {
     height: calc(95% / 2);
     margin-bottom: 8%;
@@ -298,25 +234,146 @@ header > svg:nth-child(1) {
   .activityrow .has-two-rows .smallcard:last-child {
     margin-bottom: 0px;
   }
-  
+
   /* Card Item */
   .bigcard img {
     height: 400px;
-    width: auto;
+    border-radius: 24px 24px 0 0;
   }
   .smallcard img {
-      width: 100%;
-      height: auto;
+      max-height: 160px ;
       border-radius: 24px 24px 0 0;
   }
-  .activitynames {
-    padding: 15px;   
- }
- .pomegues{
-    max-height: 166px ;
-    object-fit: cover;
- }
- .longchamp {
-    max-height: 166px ;
+  .activityrow .col img{
+    width: 100%;
     object-fit: cover;
 }
+ .col h3 {
+   height: 50px;
+   display: flex;
+   align-items : center ;
+   padding-left: 20px;
+   color: black;
+ }
+
+/* Accommodations in Marseille */
+.accommodationsection {
+    display: flex;
+    width: 100%;
+}
+ .accommodations-in-m {
+   background-color: #F2F2F2;
+   padding: 30px;
+   border-radius: 24px;
+   margin: 25px 20px 40px 40px ;
+   width: 70%;
+   
+  }
+  .accommodations-in-m .Activitylink {
+    padding bottom: 200px;
+  }
+ .accommodationtext {
+    padding: 20px ;
+}
+  .accommodationsrow {
+    display: flex;
+  }  
+  .sectionheader{
+      display :inline-flex;
+  }
+
+  /* Two Rows Items */
+  .accommodationsrow .coltworows {  
+      border-radius: 24px;
+      text-decoration: none;
+  } 
+  .accommodationsrow .coltworows .card {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 24px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border: 4px solid #F2F2F2;
+  }
+  
+  /* Card Item */
+  .card img {
+    width: 100%;
+    max-height: 120px;
+    border-radius: 24px 24px 0 0;
+    object-fit: cover;
+  }
+  span{
+      color: #0065FC;
+  }
+  .greystars {
+      color: lightgrey;
+  }
+  .cardtext {
+      padding: 5px 0 5px 15px;
+      font-size: 14px; 
+      line-height: 25px;
+      color: black;  
+  }
+
+/* Most popular */  
+.most-popular {
+    margin-right: 40px;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    margin: 25px 40px 40px 20px;
+    padding: 30px;
+    width: 30%;
+}
+.popular-header {
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.graph-icon{
+  font-size: 25px;
+}
+  .popularrow {
+    display: block;
+  }
+
+  /* Row Items */
+  .popularrow .row {
+  padding-bottom: 30px;
+  width: 100%;
+  }
+  .popularrow .row .popcard {
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border: 4px solid #F2F2F2;
+     display: flex;
+     margin-left: 15px;
+     margin-right: 15px;
+     text-decoration: none;
+  }
+  
+  .popularrow .row .popcard:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Pop Card Item */
+  .popcard img {
+    max-width: 140px;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px 0 0 24px;
+
+  }
+  .popcardtext {
+      display: inline-block;
+      padding: 5px 0 5px 15px;
+      font-size: 14px;
+      line-height: 50px;  
+      color: black;  
+      
+  }
+  .popcardtext h3 {
+    line-height: 20px;
+  }
+
